@@ -440,6 +440,17 @@ private void SendButton(object sender, RoutedEventArgs e)
 - MySQL Server instalado y en ejecución.
 - Conexión a una base de datos válida con las credenciales adecuadas.
 
+## Instalacion y Ejecucion
+- Descargar repositorio.
+- Configurar el servidor MySQL de la siguiente manera:
+    - Método de conexión: `Estándar (TCP/IP)`
+    - Nombre de host: `127.0.0.1`
+    - Puerto: `3306`
+    - Nombre de usuario: A su discreción.
+    - Contraseña: A su discreción.
+- Iniciar la aplicación en Visual Studio.
+- Iniciar sesión.
+
 ## Dependencias
 - La aplicación utiliza la biblioteca `MySql.Data` para la conexión y manipulación de datos en la base de datos MySQL.
 
