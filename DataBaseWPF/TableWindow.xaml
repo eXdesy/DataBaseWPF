@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="DataBaseWPF.TableWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataBaseWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <!-- DataGrid -->
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True"/>
+
+        <!-- Menu -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- CRUD -->
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <StackPanel VerticalAlignment="Top" Orientation="Vertical">
+                    <Button Content="Create" Click="CreateButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                    Padding="5" Width="Auto" Background="#FF005898"/>
+                    <Button Content="Read" Click="ReadButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                    Padding="5" Width="Auto" Background="#FF005898"/>
+                    <Button Content="Update" Click="UpdateButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                    Padding="5" Width="Auto" Background="#FF005898"/>
+                    <Button Content="Delete" Click="DeleteButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                    Padding="5" Width="Auto" Background="#FF005898"/>
+                </StackPanel>
+            </Grid>
+            
+            <!-- Request -->
+            <Grid Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <StackPanel VerticalAlignment="Top" Orientation="Vertical">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="8*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="query" Padding="5" Height="Auto" />
+                        <Button Content="Send" Click="SendButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                        Padding="5" Width="Auto" Background="#FF0094FF" Grid.Column="1"/>
+                    </Grid>
+
+                    <Button Content="Mostrar 5 productos más vendidos" Click="FirstButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                Padding="5" Height="Auto" Background="#FF005898"/>
+                    <Button Content="Mostrar productos sin stock" Click="SecondButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                Padding="5" Width="Auto" Background="#FF005898"/>
+                    <Button Content="Mostrar 5 productos más caros" Click="ThirdButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
+                Padding="5" Width="Auto" Background="#FF005898"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</UserControl>
