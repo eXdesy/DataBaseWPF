@@ -12,7 +12,7 @@
         <Image Source="img/northwind.png" Stretch="Fill" Height="auto" VerticalAlignment="Center" HorizontalAlignment="Left" Width="auto"/>
 
         <!-- Contenedor para los elementos -->
-        <Border Width="300" Height="350" Background="#FF003346" CornerRadius="6" HorizontalAlignment="Right" Margin="0,0,25,0">
+        <Border Width="300" Height="350" Background="#FF005898" CornerRadius="6" HorizontalAlignment="Right" Margin="0,0,25,0">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="25" Direction ="-90" RenderingBias ="Quality" ShadowDepth ="3" Color ="Gray" />
             </Border.Effect>
@@ -46,8 +46,8 @@
                 <Button x:Name="LoginBtn" Content="Enter" FontFamily="Segoe UI Black" FontSize="20" Foreground="White" Margin="0,25" Height="31" Width="250" Click="LoginButton">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF005898"/>
-                            <GradientStop Color="#FF4282CA" Offset="1"/>
+                            <GradientStop Color="#FF072547"/>
+                            <GradientStop Color="#FF072547" Offset="1"/>
                         </LinearGradientBrush>
                     </Button.Background>
                 </Button>

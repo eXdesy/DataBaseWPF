@@ -14,7 +14,27 @@
         </Grid.RowDefinitions>
 
         <!-- DataGrid -->
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" AlternatingRowBackground="#E1E1E1" 
+          RowBackground="#FFFFFF" Foreground="#333333" BorderBrush="#CCCCCC">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="BorderThickness" Value="0" />
+                    <Setter Property="Padding" Value="5" />
+                    <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#0078D4" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="BorderBrush" Value="#0078D4" />
+                    <Setter Property="BorderThickness" Value="0,0,1,1" />
+                    <Setter Property="Padding" Value="4" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
 
         <!-- Menu -->
         <Grid Grid.Row="1">
@@ -27,13 +47,13 @@
             <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <StackPanel VerticalAlignment="Top" Orientation="Vertical">
                     <Button Content="Create" Click="CreateButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                    Padding="5" Width="Auto" Background="#FF005898"/>
+            Padding="5" Width="Auto" Background="#FF00D509"/>
                     <Button Content="Read" Click="ReadButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                    Padding="5" Width="Auto" Background="#FF005898"/>
+            Padding="5" Width="Auto" Background="#FF0286EF"/>
                     <Button Content="Update" Click="UpdateButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                    Padding="5" Width="Auto" Background="#FF005898"/>
+            Padding="5" Width="Auto" Background="#FFE1CA00"/>
                     <Button Content="Delete" Click="DeleteButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                    Padding="5" Width="Auto" Background="#FF005898"/>
+            Padding="5" Width="Auto" Background="#FFDA0F00"/>
                 </StackPanel>
             </Grid>
             
@@ -48,17 +68,18 @@
 
                         <TextBox x:Name="query" Padding="5" Height="Auto" />
                         <Button Content="Send" Click="SendButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                        Padding="5" Width="Auto" Background="#FF0094FF" Grid.Column="1"/>
+                                Padding="5" Background="#0078D4" Grid.Column="1"/>
                     </Grid>
 
                     <Button Content="Mostrar 5 productos más vendidos" Click="FirstButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                Padding="5" Height="Auto" Background="#FF005898"/>
+                            Padding="5" Height="Auto" Background="#FF868686"/>
                     <Button Content="Mostrar productos sin stock" Click="SecondButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                Padding="5" Width="Auto" Background="#FF005898"/>
+                            Padding="5" Height="Auto" Background="#FF868686"/>
                     <Button Content="Mostrar 5 productos más caros" Click="ThirdButton" FontFamily="Segoe UI Black" FontSize="14" Foreground="White" 
-                Padding="5" Width="Auto" Background="#FF005898"/>
+                            Padding="5" Height="Auto" Background="#FF868686"/>
                 </StackPanel>
             </Grid>
+
         </Grid>
 
     </Grid>
