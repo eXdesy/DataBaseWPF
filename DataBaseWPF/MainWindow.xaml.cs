@@ -113,7 +113,7 @@ namespace DataBaseWPF
         private void ExitButton(object sender, RoutedEventArgs e)
         {
             // Cierra la conexión a la base de datos
-            connection.Close();
+            Sql.Close();
             // Crea una nueva instancia de LoginWindow
             LoginWindow loginWindow = new LoginWindow();
             // Muestra la ventana de inicio de sesión y cierra la ventana actual
