@@ -73,7 +73,7 @@ private void LoginButton(object sender, RoutedEventArgs e)
 ## 3. **MainWindow.xaml.cs** y **MainWindow.xaml**
 Representan la ventana principal de la aplicación. Muestra un menú con las tablas disponibles en la base de datos y permite navegar entre ellas. También proporciona la funcionalidad para cerrar la conexión a la base de datos.
 
-// Conexión a la base de datos
+Conexión a la base de datos
 ```
 private readonly MySqlConnection? connection;
 ```
