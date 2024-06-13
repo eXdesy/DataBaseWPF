@@ -2,6 +2,8 @@
 
 Este proyecto consiste en una aplicación de escritorio desarrollada en C# con WPF (Windows Presentation Foundation). La aplicación proporciona una interfaz gráfica para interactuar con una base de datos MySQL. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en las tablas de la base de datos, así como ejecutar consultas personalizadas.
 
+[VER PARTE TECNICA DEL WPF BASEDATE](https://github.com/eXdesy/DataBaseWPF/tree/master/DataBaseWPF/readme.md)
+
 ## 1. **LoginWindow**
 Representan la ventana de inicio de sesión de la aplicación. Al ingresar las credenciales correctas, se establece una conexión a la base de datos y se abre la ventana principal (`MainWindow`).
 
